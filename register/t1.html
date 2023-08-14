@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Registration Form</title>
+</head>
+<body>
+    
+    <!-- <h1>User Registration</h1> -->
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form id="registrationForm" class="form">
+            <div class="form-control">
+                <label for="username">First name</label>
+                <input type="text" placeholder="First name" id="name" name="name" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Middle name</label>
+                <input type="text" placeholder="Middle name" id="middle_name" name="middle_name" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Last name</label>
+                <input type="text" placeholder="Last name" id="last_name" name="last_name" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="a@florin-pop.com" id="email" name="email" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</smسall>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password" name="password" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password check</label>
+                <input type="password" placeholder="Password two" id="password2" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div> <!-- -->
+            <div class="form-control">
+                <label for="username">phone</label>
+                <input type="tel" placeholder="123-45-678" id="phone" name="phone"  required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">birthday</label>
+                <input type="date" placeholder="YYYY-MM-DD" id="birthday" name="birthday" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <input type="submit" id="btn_signup">
+            
+        </form>
+    </div>
+
+<!-- <h2>Registerd Users</h2>
+<table border="2" id="usersData">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    
+</table> -->
+    <script src="t3.js"></script>
+</body>
+</html>
