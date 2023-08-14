@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #9b59b6;
+	background: linear-gradient(#141e30, #243b55);
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
@@ -22,6 +22,7 @@ body {
 	overflow: hidden;
 	width: 400px;
 	max-width: 100%;
+	
 }
 
 .header {
@@ -101,9 +102,9 @@ body {
 	visibility: visible;
 }
 
-.form button {
-	background-color: #8e44ad;
-	border: 2px solid #8e44ad;
+.form #btn_signup {
+    background: #03e9f4;
+
 	border-radius: 4px;
 	color: #fff;
 	display: block;

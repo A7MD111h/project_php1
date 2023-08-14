@@ -4,6 +4,7 @@ require("./register/config.php");
 
 $email=$_POST['email'];
 $password=$_POST['password'];
+
 $sql = "SELECT * FROM users WHERE email='$email' and password='$password'";
 $result=mysqli_query($conn,$sql);
 
@@ -14,26 +15,25 @@ if ($result){
         session_start();
         $_SESSION['email']=$email;
         $_SESSION['islogged']=TRUE;
-                
+        $_SESSION['name'] = $rows['name']; 
+        $_SESSION['middle_name'] = $rows['midname']; 
+        $_SESSION['last_name'] = $rows['lastname']; 
+        $_SESSION['email'] = $rows['email']; 
+        $_SESSION['phone'] = $rows['phone']; 
         
-        if (isset($_SESSION['islogged']) && $_SESSION['islogged'] === true) {
-            $response = [
-                'islogged' => true,
-                'email' => $_SESSION['email']
-            ];
+        echo $_SESSION['islogged'];
+        if ($email === 'osama@gmail.com') {
+            $_SESSION['isAdmin'] = true;
+            header('location: ad.php'); // Redirect admin to admin page
         } else {
-            $response = [
-                'islogged' => false
-            ];
+             $_SESSION['isAdmin'] = false;
+            $_SESSION["loggedin"] = true;
+            header('location: home.php'); // Redirect normal user to index page
         }
         
-        header('Content-Type: application/json');
-        echo json_encode($response);
-  
-        header('location: home.html');
     
     }else{
-        header('location: index.html');
+        header('location: login.html');
     }
 }
 

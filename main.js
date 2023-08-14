@@ -5,9 +5,13 @@
     
     var email_error = document.getElementById('email_error');
     var pass_error = document.getElementById('pass_error');
+
+    var Signupp = document.getElementById("Signupp");
     
+
     email.addEventListener('textInput', email_Verify);
     password.addEventListener('textInput', pass_Verify);
+    
     
     function validated(e){
        
@@ -15,14 +19,12 @@
             email.style.border = "1px solid red";
             email_error.style.display = "block";
             email.focus();
-            e.preventDefault();
             return false;
         }
         if (password.value.length < 6) {
             password.style.border = "1px solid red";
             pass_error.style.display = "block";
             password.focus();
-            e.preventDefault();
             return false;
         }
     
@@ -31,7 +33,6 @@
         if (email.value.length >= 8) {
             email.style.border = "1px solid silver";
             email_error.style.display = "none";
-            e.preventDefault();
             return true;
         }
     }
@@ -39,9 +40,7 @@
         if (password.value.length >= 1) {
             password.style.border = "1px solid silver";
             pass_error.style.display = "none";
-            e.preventDefault();
             return true;
         }
     }
-    
     

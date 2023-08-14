@@ -44,7 +44,7 @@ fetch("create.php",{
 })
 .then(response=>response.json())
 .then(data=>{
-    alert(data.message);
+    // alert(data.message);
     document.getElementById("name").value="";
     document.getElementById("middle_name").value="";
     document.getElementById("last_name").value="";
@@ -52,6 +52,7 @@ fetch("create.php",{
     document.getElementById("password").value="";
     document.getElementById("phone").value="";
     document.getElementById("birthday").value="";
+    window.location.href='../login.html';   
 })
 .catch(error=>{
     console.error("Error:",error);

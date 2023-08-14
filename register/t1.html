@@ -41,7 +41,7 @@
                 <input type="email" placeholder="a@florin-pop.com" id="email" name="email" required/>
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
-                <small>Error message</smسall>
+                <small>Error message</small>
             </div>
             <div class="form-control">
                 <label for="username">Password</label>
@@ -66,12 +66,14 @@
             </div>
             <div class="form-control">
                 <label for="username">birthday</label>
-                <input type="date" placeholder="YYYY-MM-DD" id="birthday" name="birthday" required/>
+                <input type="date" placeholder="YYYY-MM-DD" id="birthday" name="birthday" max="2005-12-24"required/>
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
+
             </div>
             <input type="submit" id="btn_signup">
+           <p>already a user ? <a href="../login.html">Log in </a></p> 
             
         </form>
     </div>
