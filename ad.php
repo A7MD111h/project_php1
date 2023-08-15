@@ -35,6 +35,7 @@ if ($conn) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
    
     <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="ad.css">
    
 </head>
 <body>
@@ -57,19 +58,19 @@ if ($conn) {
                 <tbody>
                     <?php foreach ($userList as $user) : ?>
                         <tr>
-                            <td><?php echo $user['id']; ?></td>
-                            <td><?php echo $user['name']; ?></td>
-                            <td><?php echo $user['phone']; ?></td>
-                            <td><?php echo $user['email']; ?></td>
-                            <td><?php echo $user['password']; ?></td>
-                            <td><?php echo $user['birthday']; ?></td>
+                            <td style="color: white;"><?php echo $user['id']; ?></td>
+                            <td style="color: white;"><?php echo $user['name']; ?></td>
+                            <td style="color: white;"><?php echo $user['phone']; ?></td>
+                            <td style="color: white;"><?php echo $user['email']; ?></td>
+                            <td style="color: white;"><?php echo $user['password']; ?></td>
+                            <td style="color: white;"><?php echo $user['birthday']; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
         
-        <p class="text-center"><a href="logout.php">Log Out</a></p>
+        <p class="text-center" ><a href="logout.php" style="color: white;">Log Out</a></p>
     </div>
 </body>
 </html>

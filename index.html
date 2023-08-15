@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="login-box">
+		<h2>Login</h2>
+		<form class="login_form" action="logtest.php" method="post" name="form" >
+			<div class="user-box box1"> 
+				<input autocomplete="off" type="text" name="email"required>
+				<label>Email</label>
+				<div id="email_error">Please fill up your Email </div>
+			</div>
+
+			<div class="user-box box1">
+				<input type="password" name="password"required>
+				<label>Password</label>
+				<div id="pass_error">Please fill up your Password</div>
+			</div>
+			<p class="mb-0">
+				<button  class="animations" type="submit" onclick="return validated()">
+				<span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+				Login</button>
+			</p>
+			<!-- <a href="./register/t1.html">  </a>-->
+			<!-- <button type="submit" value="Sign Up" id="Signupp"  onclick="">Sign Up</button> -->
+			<p class="mb-0" style="color: white;">Don't have an account ?
+				<a class="animations" href="./register/t1.html"> 
+				<span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+				Sign Up</a>
+			</p>
+			
+		</form>
+	
+	</div>	
+	<script src="main.js"></script>
+</body>
+</html>

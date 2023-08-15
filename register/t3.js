@@ -52,7 +52,7 @@ fetch("create.php",{
     document.getElementById("password").value="";
     document.getElementById("phone").value="";
     document.getElementById("birthday").value="";
-    window.location.href='../login.html';   
+    window.location.href='../index.html';
 })
 .catch(error=>{
     console.error("Error:",error);

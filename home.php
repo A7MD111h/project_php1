@@ -16,109 +16,34 @@ if (!isset($_SESSION["islogged"]) || $_SESSION["islogged"] !== TRUE) {
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="home.css">
 	<title>Welcome Page</title>
-	<style>
-		
-.na_0{
-  width: 100% ;
-  margin:  0 auto;
-  position:sticky; ;
-  top: 0;
-  z-index:4 ;
-  overflow: hidden;
-
-  background-color: #19152B;
-  
-}
-.navbar {
-    width: 85% ;
-    margin:  0 auto;
-    background-color: #19152B;
-    /* overflow: hidden; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 1rem; */
-    /* position: fixed;
-    top: 0;
-    z-index:4 ; */
-
-}
-.navbar img {
-  height: 40px;
-  width: 100%;
-}
-
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-}
-
-
-      
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-
-ul{
-    display: flex;
-    gap: 2.5rem;
-}
-li{
-    display: block;
-    transition:.1s;
-}
-
-ul:hover li{
-    filter: blur(1px);
-}
-ul li:hover{
-    filter: blur(0px);
-}
-
-
-	</style>
 
 </head>
 <body>
-	<nav class="na_0 ">
-        <div class="navbar ">
-            <div class="divlogo">
-                <a href="#home"><img src="#" alt="Logo"></a>
-            </div>
-            <ul class="ul_nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="home.php" id="btnout">logout</a></li>
-                <li><a href="login.html" id="btnin">login</a></li>
-                <li><a href="./register/t1.html" id="btnsign">SignUp</a></li>
-            </ul>
-        </div>
-    </nav>
-	<h1 id="welc">Welcome</span></h1>
-  <P id="userDatas"></P>
-<!-- 
-  <div class="">
-        
-    <button id="" onclick=""class="butn btn">ss</button>
-    
-    <br />
-    <table border="2" id="usersData">
-        <thead>
-            <tr>
-                <th>First name</th>
-                <th>Middle Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>phone</th>
-            </tr>
+	
+<header class="header">
+      <nav class="navbar max-width">
+        <a href="#" class="divlogo"><img src="./logo.png" alt="logo"></a>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="home.php" id="btnout">logout</a></li>
+            <li class="btn signin"><a href="index.html" id="btnin">login</a></li>
+            <li class="btn join"><a href="./register/t1.html" id="btnsign">SignUp</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        </thead>
-        <tbody id="Tbody"></tbody>
-    </table>
-    </div>
-   -->
+    <!-- Hero section -->
+    <section class="hero">
+       <div class="content max-width">
+        <h2 id="welc">Welcome Page</h2>
+        <P id="userDatas"></P>
+       </div>
+    </section>
+
 </body>
 <script>
     var welc = document.getElementById("welc");
